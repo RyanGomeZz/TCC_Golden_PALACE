@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Golden Palace</title>
+</head>
+
+<body>
+    <!---------------------------------------------------------------menu Principal---------------------------->
+    <nav>
+
+        <a class="logo">Golden Palace</a>
+        <ul class="menuprime">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Sobre.html">Quem Somos</a></li>
+            <li><a href="Fale_Conosco.html">Fale Conosco</a></li>
+
+        </ul>
+
+    </nav>
+    <br><br><br><br><br>
+    <!-------------------------------------Formulário--------------------------- -->
+    <br><br><br>
+    <div class="form">
+        <form id="frmreserva" th:object="${funcionario}" th:action="@{/golden-palace/funcionario/add-funcionario}" method="post">
+            <h1>Cadastro </h1>
+            <p>Nome:<br>
+                <input type="text" th:field="*{nome}" id="txtend" size="40" maxlength="58" placeholder="Digite seu Nome" />
+            </p>
+
+            <p>Email:<br>
+                <input type="email" th:field="*{email}" id="txtend" size="40" maxlength="88" placeholder="Digite o email" />
+            </p>
+
+            <p>Telefone:<br>
+                <input type="tel" th:field="*{telefone}" id="txtend" size="40" maxlength="11" placeholder="(00) 00000-0000" />
+            </p>
+
+            <p>CPF:<br>
+                <input type="text" th:field="*{cpf}" id="txtend" size="40" maxlength="11" placeholder="Digite o CPF" />
+            </p>
+            <p>Data de Nascimento:<br>
+                <input type="date" th:field="*{dataNascimento}" name="dataNascimento" id="txtend" size="40" maxlength="8" placeholder="Digite a data de nascimento"/>
+            </p>
+            <p>Senha:<br>
+                <input type="password" th:field="*{senha}" id="txtend" size="40" maxlength="88" placeholder="Digite a Senha" />
+            </p>
+            <p>Confirme a senha:<br>
+                <input type="password" th:field="*{senha}" id="txtend" size="40" maxlength="88" placeholder="Confirme a senha" />
+            </p>
+            <br>
+            <p>Tipo cadastro:
+                <!----------radioButton-->
+                <label>
+                <input class="input-radio" th:field="*{tipoFuncionario}" type="radio" id="rfunc" name="cadastro" checked="checked" value="F">
+                Funcionário
+            </label>
+            <label>
+                <input class="input-radio" th:field="*{tipoFuncionario}" type="radio" id="radm" name="cadastro" value="A">
+                ADM
+            </label>
+                <br><br><br><br>
+                <input type="reset" value="Limpar" class="botão1" />
+                <input type="submit" value="Confirma o Cadastro" />
+
+        </form>
+    </div>
+
+
+    <br><br><br><br><br><br>
+    <footer class="rodape2">
+        <i class="fa-duotone fa-envelope"></i>
+        <img src="" alt="">
+        <small>
+            copyright@Golden Palace 2023
+        </small>
+    </footer>
+
+</html>
