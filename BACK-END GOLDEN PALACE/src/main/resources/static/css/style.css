@@ -1,0 +1,315 @@
+@media only screen and (max-device-width: 100px) {
+    body {
+        width: 100%;
+    }
+}
+
+/*-------------------------------------------Menu--------------------------------------*/
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui -apple-system, Arial, Helvetica, sans-serif;
+    background: #000000c0;
+    color: #000000c0;
+    height: 8vh;
+    padding: 0px;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 3;
+
+}
+
+body {
+    margin: 0%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+/*-------------------------------fundo e detalhes da página--------------------------*/
+
+body {
+    background-image: url('classy-restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    padding: 0%;
+    margin: 0%;
+}
+
+/*------------------------------------cadastro adm/cliente/index-------------------------------*/
+
+form {
+    color: #ffffff;
+    justify-content: center;
+
+}
+
+.form {
+    position: relative;
+    left: 35%;
+    height: 600px;
+    width: 500px;
+    background-color: #000000bd;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 6px -5px rgba(255, 217, 0, 0.568);
+    margin: 0%;
+}
+
+input {
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'GFS Didot';
+
+
+}
+
+.menuprime {
+    display: flex;
+    padding: 30px;
+
+
+}
+
+.titulo-inicio {
+    color: rgb(255, 178, 35);
+    background-color: #000000d2;
+    border-radius: 200%;
+    height: 150px;
+    width: 250px;
+    position: relative;
+    left: 43%;
+    text-decoration: none;
+    margin: 0.5%;
+}
+
+.sobrenos {
+    text-align: center;
+    width: 40%;
+    position: relative;
+    left: 30%;
+}
+
+.eclipse {
+    display: flex;
+    position: relative;
+    left: 14%;
+    width: 80%;
+    align-items: center;
+    margin: 0;
+
+}
+
+.eclipse img {
+
+    width: 3%;
+    height: 3%;
+}
+
+/*------------------------continuação menu-------------------------*/
+a {
+    padding: 10px;
+    color: #ffffffde;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/*-------------------------------------------------rodapé completo-----------------------------*/
+
+footer {
+    text-align: right;
+    background-color: #000000;
+    height: 50px;
+    color: #ffffff;
+    margin: 0%;
+    text-orientation: upright;
+}
+
+.rodape {
+    bottom: 0;
+
+    width: 100%;
+    text-align: right;
+}
+
+.rodape2 {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+}
+
+/*-------------------------------------Descrubra mais "div"------------------------------*/
+
+.inicio {
+    text-align: center;
+    color: #000000;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 0%;
+    margin: 0%;
+    text-decoration: underline;
+
+}
+
+.seta {
+    width: 1.8%;
+    height: 1.8%;
+}
+
+.inicio p {
+    padding: 0%;
+    margin: 0%;
+}
+
+/*----------------------------------------------Carrossel----------------------------------------*/
+
+.carrossel {
+    width: 860px;
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+    left: 27%;
+    border: #000000 solid;
+    border-radius: 10px;
+
+
+
+}
+
+.carrossel .pratos {
+    display: flex;
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.carrrossel .pratos img {
+    width: 19, 9%;
+}
+
+@keyframes animacao {
+    00% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+
+}
+
+/*----------------------------------------------Cardapio-inicio----------------------------------------*/
+.Cardapio-inicio{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    color: #ffffff;
+    font-size: 75%;
+    background-color: rgb(255, 178, 35);
+    
+       
+}
+.Cardapio-inicio div:hover{
+    background-color: #00000036;
+}
+
+.Cardapio-inicio div{
+    width: 200px;
+    height: 300px;
+    margin: 0.1%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 2%;
+    position: relative;
+    left: 17%;
+   
+}
+.Cardapio-inicio div img{
+    width: 190px;
+    height: 130px;
+    padding-top: 0%;
+    border-radius: 10px;
+    margin-top: 0%;
+}
+.Cardapio-inicio h3{
+    color: #000000;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 1%;
+    font-size: 150%;
+    font-family:Calibri ;
+
+}
